@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <style type="text/css">
+        /* Basic input styling */
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        input:disabled {
+            background-color: #f2f2f2;
+            cursor: not-allowed;
+        }
+
+        .Table {
+
+            display: table;
+            width: 50%;
+            height: 50%;
+        }
+
+
+        .Row {
+            display: table-row;
+        }
+
+        .Cell {
+            text-align: center;
+            display: table-cell;
+            border: solid;
+            border-width: thin;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding: 15px;
+        }
+
+        .button {
+            /* background-color: #f5c802; */
+            display: inline-block;
+            background-color: #0077B5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .Table {
+            background-color: #ccccc4;
+            border-collapse: collapse;
+            border: 2px solid #333;
+        }
+
+        .Cell:hover {
+            background-color: #ddd;
+        }
+
+        .button:hover {
+            background-color: #005a8e;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="puzzle.js"></script>
+    <script src="puzzle.js"></script>
+</head>
+
+<body bgcolor="#1b234a">
+    <div id="body" align="center">
+        <h1 color=black>Puzzle</h1>
+        <input type="submit" id="startPuzzle" class="button" value="Start the Puzzle"><br><br>
+        <input type="text" id="puzText" name="puzzleInput">
+        <input type="submit" id="puzInput" class="button" value="Give Input to the Puzzle"><br><br><br>
+        <div class="Table" id="table">
+            <div class="Row">
+                <div class="Cell">
+                    <p id="1">A</p>
+                </div>
+                <div class="Cell">
+                    <p id="2">B</p>
+                </div>
+                <div class="Cell">
+                    <p id="3">C</p>
+                </div>
+                <div class="Cell">
+                    <p id="4">D</p>
+                </div>
+                <div class="Cell">
+                    <p id="5">E</p>
+                </div>
+            </div>
+            <div class="Row">
+                <div class="Cell">
+                    <p id="6">F</p>
+                </div>
+                <div class="Cell">
+                    <p id="7">G</p>
+                </div>
+                <div class="Cell">
+                    <p id="8">H</p>
+                </div>
+                <div class="Cell">
+                    <p id="9">I</p>
+                </div>
+                <div class="Cell">
+                    <p id="10">J</p>
+                </div>
+            </div>
+            <div class="Row">
+                <div class="Cell">
+                    <p id="11">K</p>
+                </div>
+                <div class="Cell">
+                    <p id="12">L</p>
+                </div>
+                <div class="Cell">
+                    <p id="13">M</p>
+                </div>
+                <div class="Cell">
+                    <p id="14">N</p>
+                </div>
+                <div class="Cell">
+                    <p id="15">O</p>
+                </div>
+            </div>
+            <div class="Row">
+                <div class="Cell">
+                    <p id="16">P</p>
+                </div>
+                <div class="Cell">
+                    <p id="17">Q</p>
+                </div>
+                <div class="Cell">
+                    <p id="18">R</p>
+                </div>
+                <div class="Cell">
+                    <p id="19">S</p>
+                </div>
+                <div class="Cell">
+                    <p id="20">T</p>
+                </div>
+            </div>
+            <div class="Row">
+                <div class="Cell">
+                    <p id="21">-</p>
+                </div>
+                <div class="Cell">
+                    <p id="22">U</p>
+                </div>
+                <div class="Cell">
+                    <p id="23">V</p>
+                </div>
+                <div class="Cell">
+                    <p id="24">W</p>
+                </div>
+                <div class="Cell">
+                    <p id="25">X</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <input type="submit" id="leftButton" class="button" value="Move Left" /> <input type="submit" id="rightButton" class="button" value="Move Right" />
+        <input type="submit" id="topButton" class="button" value="Move Top" /> <input type="submit" id="bottomButton" class="button" value="Move Bottom" />
+        <input type="submit" id="findSpace" class="button" value="Find Space" />
+        <br> <br> <br>
+        <b>Note:</b> <br> Red indicates Starting point.<br> Green indicates win.
+    </div>
+</body>
+
+</html><
