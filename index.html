@@ -574,6 +574,40 @@ https://www.tooplate.com/view/2120-Venu-resume
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                     <h4 data-align="center">Play the puzzle: crossword</h4>
+                    <p>Start the puzzle on the right: Click start button and follow the instructions on pop-up window</p>
+                    <div class="expander">
+                        <div class="expander-header" onclick="toggleExpander(this)">Expand me: To read the rules of puzzle</div>
+                        <div class="expander-content">
+                          <p>Find the space from the table and move it to one end of the table (either left top or right bottom). 
+                            you can also change the table to make the game easy by entering your own input (from A to X) to puzzle. <br>
+                            Target: Make order of the alphabets(A-X) without space in between.<br>Start by clicking on 
+                            <strong>findspace</strong></p>
+                        </div>
+                      </div>
+                      
+                      <script>
+                      function toggleExpander(header) {
+                        var content = header.nextElementSibling;
+                        content.style.display === "none" ? content.style.display = "block" : content.style.display = "none";
+                      }
+                      </script>
+                      <style>
+                      .expander {
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                      }
+                      .expander-header {
+                        background-color: #f0f0f0;
+                        padding: 10px;
+                        cursor: pointer;
+                      }
+                      .expander-content {
+                        display: none;
+                        padding: 10px
+                      }
+                    </style>        
+
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <iframe src="FirstPuzzle.html" height="400" width="600" title="Iframe Example"></iframe>

@@ -4,7 +4,11 @@ var myCollection = document.getElementsByTagName("p");
 var i;
 var space;
 $("#startPuzzle").click(function(){
-	alert("Welcome, Find the space from the table and move to one end of the table. you can also change the table and make the game easy by entering the puzzle before playing. \nTarget: Make order of the alphabets(A-X) without space in between.\nStart by clicking on `findspace` ");
+	// var alertBox = document.createElement('div');
+	// alertBox.className = 'alert';
+	// alertBox.innerHTML = 'This is an alert box!';
+	// document.body.appendChild(alertBox);
+	alert("Welcome!!\nFind the space from the table and move to one end of the table. you can also change the table and make the game easy by entering the puzzle before playing. \nTarget: Make order of the alphabets(A-X) without space in between.\nStart by clicking on `findspace` ");
 });
 
 $("#findSpace").click(function(){
