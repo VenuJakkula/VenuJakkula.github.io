@@ -82,6 +82,39 @@
             background-color: rgba(255, 255, 255, 0.52);
             color: purple;
         }
+         /* Popup Styles */
+         #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 1000;
+        }
+        #popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        #closePopup {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="puzzle.js"></script>
@@ -89,11 +122,31 @@
 </head>
 
 <body bgcolor="#1b234a">
+    <!-- Popup HTML -->
+    <div id="popup-overlay"></div>
+
+    <!-- <div id="popup">
+        <div id ="messageTopopUp">Dynamic</div>
+        <li>Begin the puzzle using the Start button on the right.</li>
+        <li>Locate the empty space in the table and move it to one of the corners (either the top-left or bottom-right).</li> 
+        <li>You can customize the puzzle to make it easier by entering your own letters (A to X) in the grid.</li>
+        <li>The goal is to arrange the alphabets (A to X) in the correct order without any spaces between them.</li>
+        <li>Click on <i>Find Space</i> to identify the empty position and start rearranging the letters.</li>
+        <button id="closePopup">Close</button>
+    </div> -->
+
+    <div id="popup">
+        <h3 id="popup-title">Instructions</h3>
+        <ul id="popup-list"></ul>
+        <div id="win-message" style="display: none; font-size: 20px; font-weight: bold; color: green;">🎉 Yay! You won! 🎉</div>
+    </div>
+    
+    
     <div id="body" align="center">
         <h1 color=black>Puzzle</h1>
-        <input type="submit" id="startPuzzle" class="button" value="Start the Puzzle"><br><br>
-        <input type="text" id="puzText" name="puzzleInput">
-        <input type="submit" id="puzInput" class="button" value="Give Input to the Puzzle"><br><br><br>
+        <input type="submit" id="startPuzzle" class="button" value="Start"><br><br>
+        <input type="text" id="puzText" placeholder="Enter customized letters here.." name="puzzleInput">
+        <input type="submit" id="puzInput" class="button" value="Customize"><br><br><br>
         <div class="Table" id="table">
             <div class="Row">
                 <div class="Cell">
@@ -190,4 +243,4 @@
     </div>
 </body>
 
-</html><
+</html>
