@@ -302,16 +302,18 @@ https://www.tooplate.com/view/2120-ben-resume
      HERO                
   -----------------------------------------*/
 
-  .hero-title,
-  .email-link {
-    background: var(--dark-color);
-    border-radius: var(--border-radius-medium);
-    color: var(--white-color);
-    display: inline-block;
-    margin: 0.5rem 0;
-    padding: 0.5rem 2rem 1.5rem 2rem;
-	font-size: 2.2em;
-  }
+.hero-title,
+.email-link {
+  background: var(--dark-color); /* keep dark background */
+  border-radius: var(--border-radius-medium);
+  color: var(--white-color);
+  display: inline-block;
+  margin: 0.3rem 0; /* slightly reduced vertical spacing */
+  padding: 0.3rem 1.2rem 0.8rem 1.2rem; /* reduced padding */
+  font-size: 2.2em; /* preserved text size */
+  line-height: 1.1;  /* tighter vertical spacing */
+}
+
 
   .email-link {
     background: var(--primary-color);
