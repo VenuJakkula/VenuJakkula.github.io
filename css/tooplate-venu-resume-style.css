@@ -617,6 +617,35 @@ https://www.tooplate.com/view/2120-ben-resume
     }
   }
 
+  @media (max-width: 768px) {
+    .details-section {
+      display: block !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      text-align: left !important;
+    }
+    .details-section img {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 90vw;
+      height: auto;
+    }
+    .details-section table {
+      width: 100% !important;
+      font-size: 1rem;
+    }
+    .details-section td, .details-section th {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .details-section .status-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+
 
 /* === Replace yellow theme with #c5fc1e === */
 .custom-btn,
