@@ -350,6 +350,24 @@ https://www.tooplate.com/view/2120-ben-resume
     margin-right: 1rem;
   }
 
+  /* Center the about section content */
+#intro .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro .row {
+  justify-content: center !important;
+}
+
+#intro .col-lg-6,
+#intro .col-lg-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
   /*---------------------------------------
      FAQ                 
@@ -516,6 +534,44 @@ https://www.tooplate.com/view/2120-ben-resume
     max-width: 190px;
   }
 
+  /* Water bubble glass effect for Send button with #c5fc1e border, shadow, and normal text */
+#submit-button.glass-nav-button {
+  background: rgba(255, 255, 255, 0.32);
+  border: 2px solid #E8F8F3;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.15rem;
+  border-radius: 40px;
+  box-shadow:
+    0 8px 36px 0 rgba(197, 252, 30, 0.28),
+    0 2.5px 12px 0 rgba(120, 180, 255, 0.18) inset;
+  padding: 16px 38px;
+  transition: 
+    color 0.3s cubic-bezier(.4,2,.6,1),
+    background 0.3s cubic-bezier(.4,2,.6,1),
+    border-color 0.3s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.3s cubic-bezier(.4,2,.6,1),
+    transform 0.25s cubic-bezier(.4,2,.6,1),
+    font-size 0.25s cubic-bezier(.4,2,.6,1);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  margin-top: 2.5rem;
+  max-width: 240px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  background-clip: padding-box;
+  overflow: hidden;
+  position: relative;
+}
+
+#submit-button.glass-nav-button:hover,
+#submit-button.glass-nav-button:focus {
+  /* Zoom in and shrink text */
+  transform: scale(1.12);
+  font-size: 1rem;
+  }
   .copyright-text {
     font-size: var(--base-font-size);
   }
@@ -765,5 +821,131 @@ https://www.tooplate.com/view/2120-ben-resume
   color: #111 !important;
   border-bottom-color: #c5fc1e;
 }
+
+/* Glass mirror effect for Introduction heading with only bottom border and hover effect */
+.glass-heading {
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  border-radius: 0;
+  background: rgba(255,255,255,0.18);
+  border: none;
+  border-bottom: 3px solid #E8F8F3;
+  color: #232323;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  box-shadow: none;
+  backdrop-filter: blur(6px) saturate(1.1);
+  -webkit-backdrop-filter: blur(6px) saturate(1.1);
+  transition: 
+    color 0.3s cubic-bezier(.4,2,.6,1),
+    background 0.3s cubic-bezier(.4,2,.6,1),
+    border-color 0.3s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  left: 0;
+  right: 0;
+}
+
+/* Downside glass bubble hover effect for Introduction heading */
+.glass-heading:hover, .glass-heading:focus {
+  color: #232323;
+  background: rgba(255, 255, 255, 0.32);
+  border-bottom: 5px solid #E8F8F3;
+  box-shadow: 0 8px 24px 0 rgba(197,252,30,0.13);
+  backdrop-filter: blur(12px) saturate(1.3);
+  -webkit-backdrop-filter: blur(12px) saturate(1.3);
+}
+
+/* Glass bubble hover effect for all main section headings */
+.glass-heading,
+.experience-heading,
+.certifications-heading,
+.innovation-heading,
+.reviews-heading,
+.contact-heading {
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  border-radius: 0;
+  background: rgba(255,255,255,0.18);
+  border: none;
+  border-bottom: 3px solid #c5fc1e; /* changed to #c5fc1e (was #E8F8F3) */
+  color: #232323;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  box-shadow: none;
+  backdrop-filter: blur(6px) saturate(1.1);
+  -webkit-backdrop-filter: blur(6px) saturate(1.1);
+  transition: 
+    color 0.3s cubic-bezier(.4,2,.6,1),
+    background 0.3s cubic-bezier(.4,2,.6,1),
+    border-color 0.3s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  left: 0;
+  right: 0;
+}
+
+.glass-heading:hover, .glass-heading:focus,
+.experience-heading:hover, .experience-heading:focus,
+.certifications-heading:hover, .certifications-heading:focus,
+.innovation-heading:hover, .innovation-heading:focus,
+.reviews-heading:hover, .reviews-heading:focus,
+.contact-heading:hover, .contact-heading:focus {
+  color: #232323;
+  background: rgba(255, 255, 255, 0.32);
+  border-bottom: 5px solid #E8F8F3; /* changed to #E8F8F3 (was #c5fc1e) */
+  box-shadow: 0 8px 24px 0 rgba(197,252,30,0.13);
+  backdrop-filter: blur(12px) saturate(1.3);
+  -webkit-backdrop-filter: blur(12px) saturate(1.3);
+}
+
+/* Glass bubble hover effect for Send button (keep oval shape) */
+#submit-button.glass-nav-button {
+  background: rgba(255, 255, 255, 0.32);
+  border: 2px solid #E8F8F3; /* changed to #E8F8F3 (was #c5fc1e) */
+  color: #000;
+  font-weight: 400;
+  font-size: 1.15rem;
+  border-radius: 40px;
+  box-shadow:
+    0 8px 36px 0 rgba(197, 252, 30, 0.28),
+    0 2.5px 12px 0 rgba(120, 180, 255, 0.18) inset;
+  padding: 16px 38px;
+  transition: 
+    color 0.3s cubic-bezier(.4,2,.6,1),
+    background 0.3s cubic-bezier(.4,2,.6,1),
+    border-color 0.3s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.3s cubic-bezier(.4,2,.6,1),
+    transform 0.25s cubic-bezier(.4,2,.6,1),
+    font-size 0.25s cubic-bezier(.4,2,.6,1);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  margin-top: 2.5rem;
+  max-width: 240px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  background-clip: padding-box;
+  overflow: hidden;
+  position: relative;
+}
+
+#submit-button.glass-nav-button:hover,
+#submit-button.glass-nav-button:focus {
+  /* Zoom in and shrink text */
+  transform: scale(1.12);
+  font-size: 1rem;
+  }
 
 
