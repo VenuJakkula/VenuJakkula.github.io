@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const element = document.getElementById("hero-title");
   const texts = [
-    "👋 Venu, A Data Scientist",
-    "👋 Venu, A Tech Explorer"
+    "Venu, A Data Scientist",
+    "Venu, A Tech Explorer"
   ];
   let textIndex = 0;
   let charIndex = 0;

@@ -31,7 +31,7 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   :root {
-    --primary-color:        #ffd500;
+    --primary-color:        #c5fc1e;
     --white-color:          #ffffff;
     --dark-color:           #010101;
     --menu-bg-color:        #212529;
@@ -616,3 +616,125 @@ https://www.tooplate.com/view/2120-ben-resume
       padding: 0.3rem 2rem 0.6rem 2rem;
     }
   }
+
+
+/* === Replace yellow theme with #c5fc1e === */
+.custom-btn,
+.email-link,
+.w3-tag,
+.carousel-indicators li.active,
+.embla__button,
+.btn-warning,
+.bg-warning,
+.badge-warning {
+    background-color: #c5fc1e !important;
+    color: #000 !important;
+    border-color: #c5fc1e !important;
+}
+
+/* === Glassmorphism Button Style === */
+.glass-button {
+  background: rgba(212, 252, 121, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #111;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  animation: glassFadeIn 1s ease-in-out forwards;
+  text-decoration: none;
+}
+
+.glass-button:hover {
+  background: rgba(212, 252, 121, 0.3);
+  transform: scale(1.05);
+}
+
+/* Round style for social icons */
+.glass-button.fab {
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 18px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animation */
+@keyframes glassFadeIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes glassFadeIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.glass-nav-button {
+  background: rgba(212, 252, 121, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #000;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.glass-nav-button:hover {
+  background: rgba(212, 252, 121, 0.25);
+  transform: scale(1.03);
+}
+
+/* Glassmorphism effect for navbar */
+.glass-navbar {
+  background: rgba(212, 252, 121, 0.15) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Make navbar text dark and bold for glass effect */
+.glass-navbar .navbar-brand,
+.glass-navbar .nav-link,
+.glass-navbar .custom-btn,
+.glass-navbar .glass-nav-button {
+  color: #222 !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 6px rgba(255,255,255,0.12);
+}
+
+.glass-navbar .nav-link.active,
+.glass-navbar .nav-link:hover {
+  color: #111 !important;
+  border-bottom-color: #c5fc1e;
+}
+
+
